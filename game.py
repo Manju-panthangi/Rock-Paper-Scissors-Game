@@ -2,10 +2,6 @@
 
 import random
 
-playerScore = 0
-print(
-    'Welcome to the game "ROCK PAPER SCISSOR".\n The rules of the game are as follows:-\n1-User have to enter their option\n2-If you win you get 10 points and if you loose 5 point will be deducted')
-
 
 def rockpaperscissors():
     global playerScore
@@ -30,6 +26,12 @@ def rockpaperscissors():
         playerScore = playerScore - 5
 
 
+
+print(
+    '\tROCK PAPER SCISSOR\nThe rules of the game are as follows:-\n1-User have to enter their option\n2-If your card is superior than your opponent you get a point else you opponent gets a point\n3-Player with more points by last round wins.')
+
+
+playerScore=0
 while (True):
 
     t = int(input('Do you want to play?\nChoose an option\n1:YES\n2:NO\n'))
